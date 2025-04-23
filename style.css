@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    color: white;
+}
+
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    display: flex;
+    background-color: black ;
+    font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+
+   
+}
+.main
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.links
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    width: 50%;
+    justify-content: flex-start;
+    border-right: #20272b solid 1px;
+    padding: 30px;
+    font-size: medium;
+    position: sticky;    /* Add this */
+    top: 0;              /* Add this */
+    align-self: flex-start; /* Optional: ensures sticky works in flex layouts */
+}
+
+.profile-container
+{
+    display: flex;
+    flex-direction: column;
+     gap: 5px;
+    width: 90%;
+}
+.btns
+{
+    display: flex;
+    gap: 18px;
+ 
+    margin-top: 20px;
+}
+.btns img
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.profile
+{
+    display: flex;
+   gap: 12%;
+   padding: 30px 100px 20px 100px;
+   justify-content: center;
+   align-items: center;
+
+   
+}
+.profile-img img
+{
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.username
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.Verified
+{
+    margin: 0px 10px 0px 0px;
+}
+
+.line1
+{
+ display: flex;
+ gap: 8px;
+ 
+ height: 30px;
+ 
+}
+.list
+{
+    display: flex;
+    align-items: center;
+   
+}
+.follow 
+{
+    background:rgb(0, 149, 246);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    
+   
+}
+.message
+{
+    background: rgb(46, 46, 46);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.info
+{
+   display: flex;
+   flex-direction: column;
+  
+   align-items: start;
+
+  
+}
+
+.add 
+{
+    background: rgb(46, 46, 46);
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.list
+{
+    display: flex;
+    align-items: center;
+}
+
+.lin2-info
+{
+    margin: 10px 0px 0px 0px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: smaller;
+}
+.line3
+{
+   
+    font-size: smaller;
+}
+.threads
+{
+    display: flex;
+    gap: 10px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+  
+  
+}
+.icon-thread
+{
+    display: flex;
+    gap: 3px;
+  
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(46, 46, 46) ;
+    padding: 3px 8px 3px 8px;
+    border-radius: 30px;
+
+}
+.icon-thread a
+{
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+.bio-text p
+{
+    font-size: smaller;
+
+    line-height: 1.5;
+    
+}
+.extra-link a
+{
+    text-decoration: none;
+    color: #e0f1ff;
+}
+.extra-link
+{
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+}
+.data
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}
+.Options
+{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    border-top: #20272b solid 1px;
+    width: 70%;
+  
+}
+.posts,.reels,.tags
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+    font-size: 12px;
+    
+    
+}
+.fadded-text
+{
+    color: #a8a8a8;
+}
+.uploads{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 100px 0px 100px;
+    gap: 4px;
+}
+.uploaded-posts
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+}
+.uploaded-posts img
+{
+    width: 282px;
+    height: 377px;
+    object-fit: cover;
+    display: block;
+}
+.uploaded-posts .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.672); /* Instagram uses a lighter overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1;
+    pointer-events: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.overlay-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.overlay-content span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+
+.overlay-content svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.uploaded-posts:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+.post-container
+{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
